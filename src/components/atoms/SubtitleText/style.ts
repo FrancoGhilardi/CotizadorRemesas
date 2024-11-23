@@ -7,7 +7,6 @@ export const styles = StyleSheet.create({
     color: Colors.GrayscaleG01,
     fontWeight: 'bold',
     textAlign: 'center',
-    fontSize: RFValue(20),
-    textTransform: 'uppercase',
+    fontSize: RFValue(17),
   },
 });
