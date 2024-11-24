@@ -2,17 +2,14 @@ import React, {memo} from 'react';
 import {View} from 'react-native';
 import {styles} from './styles';
 import {SubtitleText, TitleText} from '../../atoms';
-import {Money} from '../../../constants/TypesMoney';
-import ChangeMoneyText from '../../atoms/ChangeMoneyText';
+import {ChangeMoneyTextProps} from '../../../types';
 
-const HeaderText: React.FC = () => {
+const HeaderText: React.FC<ChangeMoneyTextProps> = ({children}) => {
   return (
-    <View style={styles.container}>
-      <View style={styles.subcontainer}>
-        <TitleText text="Cotizador De Remesas" />
-        <SubtitleText text="Tipo de cambio" />
-        <ChangeMoneyText text={`${Money.USD} = ${Money.VES}`} />
-      </View>
+    <View style={styles.subcontainer}>
+      <TitleText text="Cotizador De Remesas" />
+      <SubtitleText text="Tasa de cambio fija" />
+      {children}
     </View>
   );
 };
