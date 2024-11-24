@@ -1,14 +1,14 @@
 import React, {memo} from 'react';
 import {View} from 'react-native';
+import {ButtonComponent} from '../../atoms';
 import {styles} from './styles';
-import {ConfirmButton} from '../../molecules';
 
-const Footer: React.FC = () => {
+const ConfirmButton: React.FC = () => {
   return (
     <View style={styles.container}>
-      <ConfirmButton />
+      <ButtonComponent />
     </View>
   );
 };
 
-export default memo(Footer);
+export default memo(ConfirmButton);
