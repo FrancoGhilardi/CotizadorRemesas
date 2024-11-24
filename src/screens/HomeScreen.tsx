@@ -10,7 +10,7 @@ const HomeScreen: React.FC = () => {
     <>
       <StatusBar
         barStyle="light-content"
-        backgroundColor={Colors.GrayscaleG10}
+        backgroundColor={Colors.GrayscaleG07}
       />
       <SafeAreaView style={styles.container}>
         <Header />

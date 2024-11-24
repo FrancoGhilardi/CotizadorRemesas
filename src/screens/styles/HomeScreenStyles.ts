@@ -4,6 +4,6 @@ import {Colors} from '../../constants/Colors';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.GrayscaleG10,
+    backgroundColor: Colors.GrayscaleG01,
   },
 });

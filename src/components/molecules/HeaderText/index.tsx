@@ -8,7 +8,7 @@ const HeaderText: React.FC<ChangeMoneyTextProps> = ({children}) => {
   return (
     <View style={styles.subcontainer}>
       <TitleText text="Cotizador De Remesas" />
-      <SubtitleText text="Tasa de cambio fija" />
+      <SubtitleText text="Tasa de cambio" />
       {children}
     </View>
   );
