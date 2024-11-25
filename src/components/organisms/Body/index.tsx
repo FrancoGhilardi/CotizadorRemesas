@@ -2,6 +2,7 @@ import React, {memo} from 'react';
 import {View} from 'react-native';
 import {styles} from './styles';
 import {TextInputContainer} from '../../molecules';
+import {ArrowDown} from '../../../assets';
 
 const Body: React.FC = () => {
   return (
@@ -14,10 +15,12 @@ const Body: React.FC = () => {
           isError={false}
           money="USD"
         />
+        <ArrowDown />
         <TextInputContainer
           label="Monto a recibir"
           money="VES"
           placeholder="$"
+          disabled={true}
         />
       </View>
     </View>

@@ -5,11 +5,12 @@ import {Label, TextInputComponent} from '../../atoms';
 import {TextInputContainerProps} from '../../../types';
 
 const TextInputContainer: React.FC<TextInputContainerProps> = ({
-  error = '',
-  isError = false,
-  label,
   money,
+  label,
   placeholder = '',
+  error = '',
+  disabled = false,
+  isError = false,
 }) => {
   return (
     <View style={styles.container}>
@@ -19,6 +20,7 @@ const TextInputContainer: React.FC<TextInputContainerProps> = ({
           placeholder={placeholder}
           onChangeText={(text: string) => console.log(text)}
           value=""
+          disabled={disabled}
         />
         <Label text={money} />
       </View>

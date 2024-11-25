@@ -9,6 +9,7 @@ export type ChangeMoneyTextProps = {
 export type TextInputConponentProps = {
   placeholder: string;
   value: string;
+  disabled?: boolean;
   onChangeText: (text: string) => void;
 };
 
@@ -20,7 +21,8 @@ export type LabelProps = {
 export type TextInputContainerProps = {
   label: string;
   money: string;
+  placeholder: string;
+  disabled?: boolean;
   error?: string;
   isError?: boolean;
-  placeholder: string;
 };

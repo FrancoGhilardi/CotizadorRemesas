@@ -12,5 +12,7 @@ export const styles = StyleSheet.create({
     width: '90%',
     height: '100%',
     borderRadius: 20,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
   },
 });
