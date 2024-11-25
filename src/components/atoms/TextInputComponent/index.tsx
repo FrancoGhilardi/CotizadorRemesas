@@ -7,6 +7,7 @@ import {Colors} from '../../../constants/Colors';
 const TextInputComponent: React.FC<TextInputConponentProps> = ({
   placeholder,
   value,
+  disabled = false,
   onChangeText,
 }) => {
   return (
@@ -19,6 +20,7 @@ const TextInputComponent: React.FC<TextInputConponentProps> = ({
       autoComplete="off"
       maxLength={20}
       placeholderTextColor={Colors.GrayscaleG10}
+      editable={disabled}
     />
   );
 };
