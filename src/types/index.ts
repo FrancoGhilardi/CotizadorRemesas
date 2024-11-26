@@ -10,7 +10,7 @@ export type TextInputConponentProps = {
   placeholder: string;
   value: string;
   disabled?: boolean;
-  onChangeText: (text: string) => void;
+  onChangeText?: (text: string) => void;
 };
 
 export type LabelProps = {
@@ -22,7 +22,25 @@ export type TextInputContainerProps = {
   label: string;
   money: string;
   placeholder: string;
+  value: string;
+  onChangeText?: (text: string) => void;
   disabled?: boolean;
   error?: string;
   isError?: boolean;
+};
+
+export type ButtonDisabledSliceProps = {
+  disabled: boolean;
+};
+
+export type ButtonComponentProps = {
+  disabled: boolean;
+  onPress: () => void;
+};
+
+export type ConfirmButtonProps = ButtonComponentProps;
+
+export type CurrencySliceProps = {
+  payment: string;
+  send: string;
 };

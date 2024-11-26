@@ -1,4 +1,9 @@
+export enum Currency {
+  USD = 1,
+  VES = 53,
+}
+
 export enum Money {
-  USD = '1 USD',
-  VES = '53 VES',
+  USD = `${Currency.USD} USD`,
+  VES = `${Currency.VES} VES`,
 }

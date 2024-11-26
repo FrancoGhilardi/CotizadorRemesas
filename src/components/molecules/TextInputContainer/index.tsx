@@ -11,6 +11,8 @@ const TextInputContainer: React.FC<TextInputContainerProps> = ({
   error = '',
   disabled = false,
   isError = false,
+  value,
+  onChangeText,
 }) => {
   return (
     <View style={styles.container}>
@@ -18,8 +20,8 @@ const TextInputContainer: React.FC<TextInputContainerProps> = ({
       <View style={styles.containerInput}>
         <TextInputComponent
           placeholder={placeholder}
-          onChangeText={(text: string) => console.log(text)}
-          value=""
+          onChangeText={onChangeText}
+          value={value}
           disabled={disabled}
         />
         <Label text={money} />
