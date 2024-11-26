@@ -10,17 +10,22 @@ const TextInputComponent: React.FC<TextInputConponentProps> = ({
   disabled = false,
   onChangeText,
 }) => {
+  const handleChangeText = (text: string) => {
+    const filteredText = text.replace(/[^0-9]/g, '');
+    onChangeText && onChangeText(filteredText);
+  };
   return (
     <TextInput
       placeholder={placeholder}
       value={value}
-      onChangeText={onChangeText}
+      onChangeText={handleChangeText}
       style={styles.input}
       inputMode="numeric"
+      keyboardType="numeric"
       autoComplete="off"
-      maxLength={20}
+      maxLength={disabled ? 13 : 10}
       placeholderTextColor={Colors.GrayscaleG10}
-      editable={disabled}
+      editable={!disabled}
     />
   );
 };
