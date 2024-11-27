@@ -18,8 +18,11 @@ export const currencySlice = createSlice({
       state.payment = data.payment;
       state.send = data.send;
     },
+    clearCurrency: state => {
+      Object.assign(state, initialState);
+    },
   },
 });
 
-export const {updateCurrency} = currencySlice.actions;
+export const {updateCurrency, clearCurrency} = currencySlice.actions;
 export default currencySlice.reducer;

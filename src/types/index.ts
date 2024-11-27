@@ -44,3 +44,18 @@ export type CurrencySliceProps = {
   payment: string;
   send: string;
 };
+
+export type TemplateScreensProps = {
+  children: React.ReactNode;
+};
+
+export type RootStackParamList = {
+  OperationDetailsScreen: undefined;
+  HomeScreen: undefined;
+};
+
+export type ButtonChevronLeftProps = {
+  onPress: () => void;
+};
+
+export type ButtonChevronLeftContainerProps = ButtonChevronLeftProps;
