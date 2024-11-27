@@ -4,8 +4,9 @@ import {Colors} from '../../../constants/Colors';
 export const styles = StyleSheet.create({
   container: {
     marginTop: '5%',
-    height: '65%',
+    height: '60%',
     alignItems: 'center',
+    minHeight: 300,
   },
   subcontainer: {
     backgroundColor: Colors.PrimaryP06,
