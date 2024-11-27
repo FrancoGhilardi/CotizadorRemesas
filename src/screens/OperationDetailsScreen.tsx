@@ -1,11 +1,12 @@
 import React, {memo} from 'react';
 import {TemplateScreens} from '../components/templates';
-import {DetailsHeader} from '../components/organisms';
+import {DetailsBody, DetailsHeader} from '../components/organisms';
 
 const OperationDetailsScreen: React.FC = () => {
   return (
     <TemplateScreens>
       <DetailsHeader />
+      <DetailsBody />
     </TemplateScreens>
   );
 };

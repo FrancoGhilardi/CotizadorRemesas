@@ -23,7 +23,7 @@ const TextInputComponent: React.FC<TextInputConponentProps> = ({
       inputMode="numeric"
       keyboardType="numeric"
       autoComplete="off"
-      maxLength={disabled ? 13 : 10}
+      maxLength={disabled ? 15 : 10}
       placeholderTextColor={Colors.GrayscaleG10}
       editable={!disabled}
     />

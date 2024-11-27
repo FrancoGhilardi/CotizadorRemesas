@@ -8,5 +8,6 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     fontSize: RFValue(12),
+    letterSpacing: 2,
   },
 });

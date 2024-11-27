@@ -8,5 +8,6 @@ export const buildStyles = (isDanger: boolean) =>
       fontSize: RFValue(15),
       fontWeight: 'bold',
       color: isDanger ? Colors.Danger : Colors.Black,
+      letterSpacing: 1,
     },
   });

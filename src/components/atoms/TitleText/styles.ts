@@ -9,5 +9,6 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: RFValue(20),
     textTransform: 'uppercase',
+    letterSpacing: 1,
   },
 });
