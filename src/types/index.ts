@@ -1,5 +1,6 @@
 export type AtomsText = {
   text: string;
+  isBlue?: boolean;
 };
 
 export type ChangeMoneyTextProps = {
@@ -59,3 +60,8 @@ export type ButtonChevronLeftProps = {
 };
 
 export type ButtonChevronLeftContainerProps = ButtonChevronLeftProps;
+
+export type DetailsComponentProps = {
+  label: string;
+  currency: string;
+};

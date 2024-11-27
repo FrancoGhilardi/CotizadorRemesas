@@ -1,6 +1,6 @@
 import React, {memo, useCallback, useEffect} from 'react';
 import {BackHandler, View} from 'react-native';
-import {ButtonChevonLeftContainer} from '../../molecules';
+import {ButtonChevonLeftContainer, TitleHeaderDetails} from '../../molecules';
 import {styles} from './styles';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {RootStackParamList} from '../../../types';
@@ -37,6 +37,7 @@ const DetailsHeader: React.FC = () => {
   return (
     <View style={styles.container}>
       <ButtonChevonLeftContainer onPress={handleOnPress} />
+      <TitleHeaderDetails />
     </View>
   );
 };

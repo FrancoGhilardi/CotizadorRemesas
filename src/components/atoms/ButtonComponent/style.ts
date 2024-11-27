@@ -17,5 +17,6 @@ export const buildStyles = (disabled: boolean) =>
       color: Colors.Black,
       fontSize: RFValue(16),
       fontWeight: 'bold',
+      letterSpacing: 1,
     },
   });
