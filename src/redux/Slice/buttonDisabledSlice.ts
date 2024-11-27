@@ -12,8 +12,11 @@ export const buttonDisabledSlice = createSlice({
     setButtonDisabled: (state, action: PayloadAction<boolean>) => {
       state.disabled = action.payload;
     },
+    disabledButton: state => {
+      Object.assign(state, initialState);
+    },
   },
 });
 
-export const {setButtonDisabled} = buttonDisabledSlice.actions;
+export const {setButtonDisabled, disabledButton} = buttonDisabledSlice.actions;
 export default buttonDisabledSlice.reducer;
